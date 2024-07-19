@@ -18,10 +18,10 @@ async function main(): Promise<void> {
 
                 // Create user
                 const newUser: BodyRequestCreateUser = {
-                    name: 'Alejandro',
-                    lastName: 'Echavarria',
-                    email: 'aec45849848754j@gmail.com',
-                    password: 'S3cur3P@ssw0rd',
+                    name: 'luffy',
+                    lastName: 'monkey',
+                    email: 'kaisoku@orebanaru.com',
+                    password: 'vivaelonepiece',
                 };
         
                 try {
