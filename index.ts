@@ -16,22 +16,3 @@ async function main(): Promise<void> {
 
         const token = resultLogin.data.token;
 
-                // Create user
-                const newUser: BodyRequestCreateUser = {
-                    name: 'luffy',
-                    lastName: 'monkey',
-                    email: 'kaisoku@orebanaru.com',
-                    password: 'vivaelonepiece',
-                };
-        
-                try {
-                    await booksController.createUser(newUser, token);
-                    console.log('User creation succeeded');
-                } catch (error) {
-                    console.log(`Error creating user: ${error}`);
-                }}
-
-            catch (error) {
-                console.log(`Error logging in: ${error}`);
-            }
-        }
