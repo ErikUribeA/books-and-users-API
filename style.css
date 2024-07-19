@@ -1,0 +1,75 @@
+
+
+body{
+    background-image: url(./img/wp10015904-anime-girl-reading-book-wallpapers.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    list-style: none;
+    gap: 40px;
+    color: black;
+    font-weight: bolder;
+}
+
+ul img{
+    width: 55px;
+    cursor: pointer;
+}
+
+li{
+    cursor: pointer;
+}
+.different{
+    color: rgb(252, 255, 98);
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    color:  rgb(251, 255, 22);
+}
+
+.highlight{
+    color: black;
+}
+
+.containerForm{
+    display: flex;
+    justify-content: center;
+
+}
+
+#formUser{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    color: rgb(252, 255, 98);
+}
+
+input{
+    width: 20vw;
+    height: 20px;
+    border-radius: 7px;
+    border: 1.8px solid rgb(252, 255, 98) ;
+}
+
+button{
+    width: 10vw;
+    height: 28px;
+    border-radius: 7px;
+    border: none;
+    font-weight: bold;
+    color: black;
+    background-color:rgb(252, 255, 98) ;
+}
