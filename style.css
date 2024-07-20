@@ -94,5 +94,6 @@ button{
     color: black;
     background-color:rgb(252, 255, 98) ;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 
