@@ -30,13 +30,17 @@ ul img{
 li{
     cursor: pointer;
 }
-.different{
-    color: rgb(252, 255, 98);
-    font-weight: bold;
-}
+
 h1{
     text-align: center;
     color:  rgb(251, 255, 22);
+    font-size: 35px;
+}
+
+h2{
+    text-align: center;
+    color:  rgb(251, 255, 22);
+
 }
 
 .highlight{
@@ -49,12 +53,17 @@ h1{
 
 }
 
-#formUser{
+.formUser{
     display: flex;
     flex-direction: column;
     gap: 25px;
     align-items: center;
     color: rgb(252, 255, 98);
+}
+
+.formUser #deleteInp{
+    width: 35vw;
+    height: 25px;
 }
 
 input{
@@ -64,6 +73,10 @@ input{
     border: 1.8px solid rgb(252, 255, 98) ;
 }
 
+textarea{
+    border-radius: 7px;
+    border: 1.8px solid rgb(252, 255, 98) ;
+}
 button{
     width: 10vw;
     height: 28px;
@@ -72,4 +85,6 @@ button{
     font-weight: bold;
     color: black;
     background-color:rgb(252, 255, 98) ;
+    margin-bottom: 40px;
 }
+
