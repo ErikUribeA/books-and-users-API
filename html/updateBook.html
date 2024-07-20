@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books API</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../img/bookshelf_icon-icons.com_54414.ico" type="image/x-icon">
 </head>
@@ -17,11 +17,16 @@
             <li class="deleteBook">Delete book</li>
         </ul>
     </nav>
-    </nav>
     <h1><span class="highlight">Book</span> api</h1>
-    <h2>New Book</h2>
+    <h2>Update a Book</h2>
     <div class="containerForm">
-        <form class="formUser">
+        <form  class="formUser">
+            <input type="text"  id="searchTitle" placeholder="Enter the name of the book to update ">
+            <button type="submit">Search</button>
+        </form>
+
+        <form id="editForm" style="display: none;">
+            <input type="hidden" id="bookId">
             <label for="title">Title:</label>
             <input type="text"  id="title">
             <label for="author">Author:</label>
@@ -31,11 +36,11 @@
             <label for="summary">Summary</label>
             <textarea  id="summary" rows="3" cols="35"></textarea>
             <label for="publicationDate">Publication Date:</label>
-            <input type="date"  id="date">
-            <button type="submit">Send</button>
+            <input type="date"  id="publicationDate">
+            <Button type="submit">Send</Button>
         </form>
     </div>
-    <script type="module" src="../scripts/newBook.js"></script>
     <script type="module" src="../scripts/links.js"></script>
+    <script type="module" src="../scripts/updateBook.js"></script>
 </body>
 </html>

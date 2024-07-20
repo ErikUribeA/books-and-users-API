@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     editBook.addEventListener("click", (ev) => {
         ev.preventDefault();
-        window.location.href = "/html/editBook.html";
+        window.location.href = "/html/updateBook.html";
     });
     deleteBook.addEventListener("click", (ev) => {
         ev.preventDefault();

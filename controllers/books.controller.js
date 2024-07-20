@@ -31,7 +31,6 @@ export class BooksController {
                 throw new Error('Not authenticated: ');
             }
             const responseBodyLogin = yield result.json();
-            console.log(`Result token: ${responseBodyLogin.data.token}`);
             return responseBodyLogin;
         });
     }
@@ -87,7 +86,7 @@ export class BooksController {
                 method: 'GET',
                 headers: headers
             };
-            const url = this.domain + '/api/v1/books?limit=10&page=1';
+            const url = this.domain + '/api/v1/books?limit=1000&page=1';
             const result = yield fetch(url, reqOptions);
             console.log(`Status code: ${result.status}`);
             if (result.status !== 200) {

@@ -61,6 +61,13 @@ h2{
     color: rgb(252, 255, 98);
 }
 
+#editForm{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    color: rgb(252, 255, 98);
+}
 .formUser #deleteInp{
     width: 35vw;
     height: 25px;
@@ -76,6 +83,7 @@ input{
 textarea{
     border-radius: 7px;
     border: 1.8px solid rgb(252, 255, 98) ;
+    width: 25vw;
 }
 button{
     width: 10vw;
