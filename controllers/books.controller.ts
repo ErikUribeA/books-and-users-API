@@ -27,7 +27,6 @@ export class BooksController {
             throw new Error('Not authenticated: ');
         }
         const responseBodyLogin: ResponseLoginBooks = await result.json();
-        console.log(`Result token: ${responseBodyLogin.data.token}`);
         return responseBodyLogin;
     }
 
@@ -52,6 +51,7 @@ export class BooksController {
         }
         console.log('User created successfully');
     }
+
     async createBook(book: Book, token: string): Promise<void> {
         const headers: Record<string, string> = {
             'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ export class BooksController {
             method: 'GET',
             headers: headers
         }
-        const url = this.domain + '/api/v1/books?limit=10&page=1';
+        const url = this.domain + '/api/v1/books?limit=1000&page=1';
         const result: Response = await fetch(url, reqOptions);
 
         console.log(`Status code: ${result.status}`);

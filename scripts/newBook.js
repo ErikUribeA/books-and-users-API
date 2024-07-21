@@ -13,15 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const booksController = new BooksController('http://190.147.64.47:5155');
     form.addEventListener('submit', (event) => __awaiter(void 0, void 0, void 0, function* () {
         event.preventDefault();
-        const name = document.getElementById('name');
-        const lastName = document.getElementById('lastName');
-        const email = document.getElementById('email');
-        const password = document.getElementById('password');
-        const newUser = {
-            name: name.value,
-            lastName: lastName.value,
-            email: email.value,
-            password: password.value
+        const title = document.getElementById('title');
+        const author = document.getElementById('author');
+        const description = document.getElementById('description');
+        const summary = document.getElementById('summary');
+        const publicationDate = document.getElementById('date');
+        const newBook = {
+            title: title.value,
+            author: author.value,
+            description: description.value,
+            summary: summary.value,
+            publicationDate: publicationDate.value
         };
         try {
             // Primero, obtén el token haciendo login
@@ -30,15 +32,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 password: 'C0ntr4S3gu++r4'
             });
             const token = loginResult.data.token;
-            // Luego, crea el usuario
-            yield booksController.createUser(newUser, token);
-            console.log('User creation succeeded');
-            alert('User registered successfully!');
-            form.reset();
+            // Luego, crea el libro
+            try {
+                yield booksController.createBook(newBook, token);
+                console.log('Book creation succeeded');
+                alert('The book has been created successfully');
+                form.reset();
+            }
+            catch (error) {
+                console.log(`Error creating book: ${error}`);
+            }
         }
         catch (error) {
-            console.error('Error creating user:', error);
-            alert('Error registering user. Please try again.');
+            console.log(`Error logging in: ${error}`);
         }
     }));
 });
