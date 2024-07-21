@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             try {
                 yield booksController.createBook(newBook, token);
                 console.log('Book creation succeeded');
+                alert('The book has been created successfully');
                 form.reset();
             }
             catch (error) {
