@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             try {
                 await booksController.createBook(newBook, token);
                 console.log('Book creation succeeded');
+                alert('The book has been created successfully')
                 form.reset();
             } catch (error) {
                 console.log(`Error creating book: ${error}`);
