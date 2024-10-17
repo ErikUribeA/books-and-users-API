@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     function renderBooks(title: string, author: string, description: string): void {
         const cardsContainer = document.querySelector('.containerCards') as HTMLDivElement;
 
-        const card = document.createElement('div') as HTMLDivElement;
+        const card = document.createElement('div') as HTMLDivElement; 
         card.classList.add('cardBook');
         const bookTitle = document.createElement('h3') as HTMLHeadingElement;
         bookTitle.textContent = title;

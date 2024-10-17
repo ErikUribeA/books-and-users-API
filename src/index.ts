@@ -1,5 +1,5 @@
-import { BooksController } from "./controllers/books.controller.js";
-import { BodyRequestCreateUser, RequestLoginBooks, ResponseLoginBooks, Book, BodyResponseBooks } from "./models/books.model.js";
+import { BooksController } from "../controllers/books.controller.js";
+import { BodyRequestCreateUser, RequestLoginBooks, ResponseLoginBooks, Book, BodyResponseBooks } from "../models/books.model.js";
 
 async function main(): Promise<void> {
     const booksController: BooksController = new BooksController('http://190.147.64.47:5155');
